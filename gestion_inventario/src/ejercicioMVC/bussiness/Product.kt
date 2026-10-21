@@ -4,7 +4,7 @@ enum class Categoria {
     ELECTRONICA, ROPA, ALIMENTACION, HOGAR;
 }
 data class Product(
-    val id: Int,
+    var id: Int,
     var nombre: String?,
     var precio: Double,
     var stock: Int,

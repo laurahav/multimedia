@@ -5,6 +5,7 @@ import ejercicioMVC.bussiness.Product
 
 class ProductModel (val lista: MutableList<Product>) {
     fun insertar(product: Product): Boolean {
+        product.id = lista.size
         lista.add(product)
         return true;
     }
